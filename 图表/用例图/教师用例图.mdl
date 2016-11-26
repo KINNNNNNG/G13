@@ -159,6 +159,14 @@
 			quid       	"583939A00299"
 			supplier   	"Use Case View::发起讨论"
 			quidu      	"583939A0029D")))
+	    (object UseCase "删除"
+		quid       	"583971B0019C"
+		visible_modules 	(list dependency_list
+		    (object Dependency_Relationship
+			quid       	"583971C102E6"
+			stereotype 	"extend"
+			supplier   	"Use Case View::资料上传"
+			quidu      	"583939A00268")))
 	    (object Association "$UNNAMED$0"
 		quid       	"583939A00263"
 		roles      	(list role_list
@@ -238,7 +246,7 @@
 		zoom       	100
 		max_height 	28350
 		max_width  	21600
-		origin_x   	1915
+		origin_x   	1916
 		origin_y   	0
 		items      	(list diagram_item_list
 		    (object UseCaseView "Use Case View::教师注册" @1
@@ -612,7 +620,7 @@
 				    (1251, 1494))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$6" @19
-			location   	(2146, 1322)
+			location   	(2146, 1321)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -628,26 +636,26 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$7" @20
 				Parent_View 	@19
-				location   	(-1751, -66)
+				location   	(-1751, -67)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"583939A00274"
 				client     	@19
 				supplier   	@12
 				vertices   	(list Points
-				    (2146, 1322)
-				    (1950, 989))
+				    (2146, 1321)
+				    (1949, 986))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$8" @21
 				Parent_View 	@19
-				location   	(-1751, -66)
+				location   	(-1751, -67)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"583939A00275"
 				client     	@19
 				supplier   	@9
 				vertices   	(list Points
-				    (2146, 1322)
+				    (2146, 1321)
 				    (2343, 1656))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$9" @22
@@ -1063,6 +1071,69 @@
 			vertices   	(list Points
 			    (3737, 1553)
 			    (3363, 1733))
+			line_style 	0)
+		    (object UseCaseView "Use Case View::删除" @46
+			location   	(1297, 2131)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@46
+			    location   	(1297, 2269)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"删除")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"583971B0019C"
+			height     	118)
+		    (object DependencyView "" @47
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	(object SegLabel @48
+			    Parent_View 	@47
+			    location   	(1373, 1877)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    anchor     	10
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	450
+			    justify    	0
+			    label      	"<<extend>>"
+			    pctDist    	0.500000
+			    height     	120
+			    orientation 	0)
+			line_color 	3342489
+			quidu      	"583971C102E6"
+			client     	@46
+			supplier   	@7
+			vertices   	(list Points
+			    (1348, 2073)
+			    (1568, 1845))
 			line_style 	0)))))
     root_category 	(object Class_Category "Logical View"
 	quid       	"5839399703AC"
